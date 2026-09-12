@@ -2733,11 +2733,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bento-switcher-title {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .bento-switcher-subtitle {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bento-switcher-item.active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+.bento-switcher-item.active .bento-switcher-title {
+  color: #064734 !important;
+  -webkit-text-fill-color: #064734 !important;
+}
+
+.bento-switcher-item.active .bento-switcher-subtitle {
+  color: #1a4d3b !important;
+  -webkit-text-fill-color: #1a4d3b !important;
 }
 
 .bento-title {
