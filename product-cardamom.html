@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="css/style.css?v=202609122330">
+  <link rel="stylesheet" href="css/style.css?v=202609122335">
   
   <!-- SVG Favicon / Icon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
@@ -22,153 +22,100 @@
   <style>
     /* Spices Overview Intro Banner */
     .spices-intro-banner {
-      padding-top: calc(var(--header-height) + 2rem);
-      padding-bottom: 2rem;
+      padding-top: calc(var(--header-height) + 2.5rem);
+      padding-bottom: 2.5rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.15);
     }
     .spices-intro-content {
-      max-width: 900px;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
     }
     .spices-intro-lead {
-      font-size: 1.25rem;
+      font-size: clamp(1.15rem, 2vw, 1.35rem);
       font-weight: 500;
       color: #ffffff;
-      line-height: 1.6;
-      margin-bottom: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
     }
     .spices-intro-sub {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      align-items: center;
+      gap: 1.25rem;
       font-size: 1.05rem;
       color: var(--color-muted);
     }
     .cert-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.65rem;
       background: rgba(220, 239, 217, 0.12);
       border: 1px solid rgba(220, 239, 217, 0.25);
       color: var(--accent-cardamom);
-      padding: 0.5rem 1.15rem;
+      padding: 0.55rem 1.35rem;
       border-radius: 100px;
       font-size: 0.95rem;
       font-weight: 500;
-      width: fit-content;
-    }
-
-    /* Bento Hero */
-    .bento-hero {
-      padding: 3rem 0 2rem;
-      position: relative;
-    }
-    .bento-hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .bento-hero-details {
-      display: flex;
-      flex-direction: column;
-    }
-    .bento-hero-title {
-      font-family: 'Anton', Impact, sans-serif;
-      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      line-height: 1.1;
-      margin-bottom: 1rem;
-      color: #ffffff;
-    }
-    .bento-hero-subtitle {
-      font-size: 1.2rem;
-      line-height: 1.65;
-      color: var(--accent-cardamom);
-      margin-bottom: 2rem;
-      max-width: 620px;
-    }
-    .bento-hero-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .bento-hero-image-wrap {
-      position: relative;
-      border-radius: 28px;
-      overflow: hidden;
-      aspect-ratio: 1 / 1;
-      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0.3) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-    .bento-hero-image-wrap img {
-      width: 85%;
-      height: 85%;
-      object-fit: contain;
-      filter: drop-shadow(0 15px 30px rgba(0,0,0,0.4));
-      transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-    .bento-hero-image-wrap:hover img {
-      transform: scale(1.05);
     }
 
     /* Switcher Navigation */
     .bento-switcher-section {
-      padding: 1.25rem 0 2rem;
+      padding: 1.5rem 0;
       position: sticky;
       top: var(--header-height);
       z-index: 100;
       background: rgba(6, 71, 52, 0.95);
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .bento-switcher {
       display: flex;
-      gap: 0.75rem;
+      justify-content: center;
+      gap: 0.85rem;
       overflow-x: auto;
-      padding: 0.25rem 0;
+      padding: 0.25rem 0.5rem;
       scrollbar-width: none;
     }
     .bento-switcher::-webkit-scrollbar {
       display: none;
     }
     .bento-switcher-item {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.75rem;
-      padding: 0.6rem 1.25rem 0.6rem 0.75rem;
+      gap: 0.85rem;
+      padding: 0.6rem 1.4rem 0.6rem 0.65rem;
       border-radius: 100px;
       text-decoration: none;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       color: #ffffff;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
       white-space: nowrap;
       flex-shrink: 0;
     }
     .bento-switcher-item:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.15);
       transform: translateY(-2px);
     }
     .bento-switcher-item.active {
-      background: #ffffff;
-      color: #064734;
-      border-color: #ffffff;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      background: #ffffff !important;
+      border-color: #ffffff !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+      transform: translateY(-2px);
     }
     .bento-switcher-item.active .bento-switcher-title {
-      color: #064734;
+      color: #064734 !important;
+      -webkit-text-fill-color: #064734 !important;
     }
     .bento-switcher-item.active .bento-switcher-subtitle {
-      color: #2b5949;
+      color: #1a4d3b !important;
+      -webkit-text-fill-color: #1a4d3b !important;
     }
     .bento-switcher-img {
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       object-fit: cover;
       border: 1px solid rgba(255, 255, 255, 0.2);
@@ -176,6 +123,7 @@
     .bento-switcher-text {
       display: flex;
       flex-direction: column;
+      text-align: left;
     }
     .bento-switcher-title {
       font-family: 'Anton', Impact, sans-serif;
@@ -183,10 +131,72 @@
       letter-spacing: 0.04em;
       line-height: 1.1;
       text-transform: uppercase;
+      color: #ffffff;
     }
     .bento-switcher-subtitle {
       font-size: 0.75rem;
-      color: var(--color-muted);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* Bento Hero */
+    .bento-hero {
+      padding: 3.5rem 0 3rem;
+      position: relative;
+    }
+    .bento-hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .bento-hero-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .bento-hero-title {
+      font-family: 'Anton', Impact, sans-serif;
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+      color: #ffffff;
+    }
+    .bento-hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: var(--accent-cardamom);
+      margin-bottom: 2.25rem;
+      max-width: 600px;
+    }
+    .bento-hero-actions {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .bento-hero-image-wrap {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      aspect-ratio: 4 / 3;
+      background: #0b1510;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    }
+    .bento-hero-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .bento-hero-image-wrap:hover img {
+      transform: scale(1.04);
     }
 
     /* Bento Grid Details */
@@ -196,17 +206,19 @@
     .bento-grid-layout {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 1.75rem;
+      gap: 2rem;
+      align-items: stretch;
     }
     .bento-card {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 24px;
-      padding: 2.25rem;
+      padding: 2.5rem;
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       backdrop-filter: blur(8px);
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
@@ -218,8 +230,9 @@
       font-size: 0.8rem;
     }
     .bento-card-header h3 {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       margin-bottom: 0;
+      color: #ffffff;
     }
     .bento-card p {
       font-size: 1.1rem;
@@ -228,7 +241,7 @@
       margin-bottom: 0;
     }
     
-    /* Grid Spans */
+    /* Spans */
     .col-span-7 { grid-column: span 7; }
     .col-span-5 { grid-column: span 5; }
     .col-span-6 { grid-column: span 6; }
@@ -251,15 +264,14 @@
     }
     .specs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 1.5rem;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
+      margin: 1.25rem 0;
     }
     .spec-item {
       display: flex;
       flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.3rem;
     }
     .spec-label {
       font-family: 'Anton', Impact, sans-serif;
@@ -275,7 +287,7 @@
     }
     .spec-cert-banner {
       margin-top: auto;
-      padding-top: 1.25rem;
+      padding-top: 1.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
@@ -290,12 +302,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
-      margin-top: 1rem;
+      margin-top: 1.25rem;
     }
     .use-tile {
       display: inline-flex;
       align-items: center;
-      padding: 0.6rem 1.15rem;
+      padding: 0.65rem 1.25rem;
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 100px;
@@ -314,16 +326,20 @@
     .bento-img-card {
       padding: 0;
       overflow: hidden;
-      min-height: 280px;
+      min-height: 320px;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
     .bento-img-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
+      display: block;
       transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     }
     .bento-img-card:hover img {
-      transform: scale(1.04);
+      transform: scale(1.05);
     }
 
     /* Beyond Range Section */
@@ -360,11 +376,11 @@
     @media (max-width: 991px) {
       .bento-hero-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
       }
       .bento-hero-image-wrap {
-        max-width: 380px;
-        margin: 0 auto;
+        min-height: 280px;
+        max-width: 100%;
       }
       .col-span-7, .col-span-5, .col-span-6, .col-span-8, .col-span-4, .col-span-12 {
         grid-column: span 12;
@@ -373,6 +389,9 @@
         flex-direction: column;
         text-align: center;
         padding: 2.5rem 1.75rem;
+      }
+      .bento-switcher {
+        justify-content: flex-start;
       }
     }
   </style>
@@ -509,13 +528,8 @@
             <p>Sweet, cool and aromatic, with bright citrus and a hint of eucalyptus.</p>
           </div>
 
-          <!-- Visual Gallery Image 1 -->
-          <div class="bento-card bento-img-card col-span-4 reveal-up">
-            <img src="assets/cardamom_1.webp" alt="Harvesting Green Cardamom in Idukki">
-          </div>
-
           <!-- At a Glance Technical Specs Card -->
-          <div class="bento-card card-specs col-span-8 reveal-up">
+          <div class="bento-card card-specs col-span-7 reveal-up">
             <div class="bento-card-header">
               <span class="eyebrow"><span class="heading-first-half">SPECIFICATIONS</span></span>
               <h3>At a glance</h3>
@@ -544,13 +558,18 @@
             </div>
           </div>
 
+          <!-- Visual Gallery Image 1 -->
+          <div class="bento-card bento-img-card col-span-5 reveal-up">
+            <img src="assets/cardamom_1.webp" alt="Harvesting Green Cardamom in Idukki">
+          </div>
+
           <!-- Visual Gallery Image 2 -->
-          <div class="bento-card bento-img-card col-span-4 reveal-up">
+          <div class="bento-card bento-img-card col-span-5 reveal-up">
             <img src="assets/cardamom_2.webp" alt="Grading Green Cardamom Pods">
           </div>
 
           <!-- Uses Rendered as Tiles -->
-          <div class="bento-card col-span-8 reveal-up">
+          <div class="bento-card col-span-7 reveal-up">
             <div class="bento-card-header">
               <span class="eyebrow"><span class="heading-first-half">APPLICATIONS</span></span>
               <h3>Uses</h3>
