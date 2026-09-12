@@ -5,38 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Tags -->
-  <title>Kassia Naturals â€” Traceable Single-Origin Kerala Spices | Seed to Spice</title>
-  <meta name="description" content="Single-origin cardamom, pepper, cloves, cinnamon and dried ginger from the Malabar hills â€” traceable to origin, tested for purity, shipped from Kerala.">
+  <title>Kassia Naturals — Traceable Single-Origin Kerala Spices | Seed to Spice</title>
+  <meta name="description" content="Single-origin cardamom, pepper, cloves, cinnamon and dried ginger from the Malabar hills — traceable to origin, lab-tested for purity, shipped from Kerala.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="css/style.css?v=202609122330">
+  <link rel="stylesheet" href="css/style.css?v=202609122345">
   
   <!-- SVG Favicon / Icon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸŒ¿</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
   
   <style>
-    /* Headline Rotator layout */
-    .hero-title-container {
-      position: relative;
-    }
-    .headline-part {
-      position: relative;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-      pointer-events: none;
-    }
-    .headline-part.active {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-
     /* Hero Scroll Canvas */
     #hero-scroll-bg {
       position: absolute;
@@ -47,28 +30,27 @@
       z-index: 1;
       pointer-events: none;
       display: block;
-      opacity: 0.95; /* Decreased opacity for mobile */
+      opacity: 0.95;
     }
     
     @media (min-width: 768px) {
       #hero-scroll-bg {
-        opacity: 1; /* Reset opacity for desktop */
+        opacity: 1;
       }
     }
     
-    /* Hide static background since animation plays everywhere */
     .hero-background {
       display: none !important;
     }
 
-    /* Hide Navbar (Hero only) */
+    /* Header scroll style */
     header.hero-glassy {
       transform: translateY(-100%) !important;
       opacity: 0 !important;
       pointer-events: none !important;
     }
 
-    /* â”€â”€ Spices Card Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* Spices Card Grid */
     .spices-card-section {
       padding: 5rem 0 7rem;
       background-color: #F7F3EE;
@@ -77,9 +59,6 @@
     .spices-card-section .eyebrow {
       color: var(--bg-cream);
     }
-    .spices-card-section h2 {
-      /* Base styles if needed */
-    }
     .spices-card-section .heading-first-half {
       color: var(--bg-cream);
     }
@@ -87,7 +66,7 @@
       color: #1a1a1a;
     }
     .spices-card-section p {
-      color: #1a1a1a;
+      color: #2b3a32;
     }
     .spices-header {
       text-align: center;
@@ -146,7 +125,6 @@
       color: #fff;
     }
     
-    /* Specific back colors */
     .spice-card.cardamom .spice-card-back { background: linear-gradient(135deg, #1A3322 0%, #294D36 100%); }
     .spice-card.pepper .spice-card-back { background: linear-gradient(135deg, #1F1F1F 0%, #383838 100%); }
     .spice-card.cloves .spice-card-back { background: linear-gradient(135deg, #3E1C15 0%, #5C2A20 100%); }
@@ -257,486 +235,479 @@
     .spice-card:hover .spice-card-btn svg {
       transform: translateX(4px);
     }
-</style>
+  </style>
 </head>
 <body>
   <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
   <div id="content-wrapper" style="position: relative; z-index: 1;">
-<!-- Floating particles container for Hero background animation -->
-  <div class="hero-particles-container" style="position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 2;"></div><a href="index.html" class="logo-badge" aria-label="Kassia Naturals Home">
-    <img src="logo.webp" alt="Kassia Naturals" class="site-logo">
-  </a>
+    <!-- Floating particles container for Hero background animation -->
+    <div class="hero-particles-container" style="position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 2;"></div>
+    
+    <a href="index.html" class="logo-badge" aria-label="Kassia Naturals Home">
+      <img src="logo.webp" alt="Kassia Naturals" class="site-logo">
+    </a>
 
-  <!-- Global Header / Navigation -->
-  <header>
-    <div class="container nav-container">
-      
-      <nav aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="active">Home</a></li>
-          <li class="nav-item"><a href="product-cardamom.html">Spices</a></li>
-          <li class="nav-item"><a href="story.html">Our Story</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      
-
-      
-      <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background"></div>
-      <canvas id="hero-scroll-bg"></canvas>
-      <div class="container">
-        <div class="hero-content" style="position: relative; z-index: 10;">
-        </div>
-      </div>
-    </section>
-
-    <!-- Origin Strip -->
-    <section class="origin-strip">
-      <div class="container origin-grid">
-        <div class="origin-left reveal-up">
-          <span class="eyebrow"><span class="heading-first-half">THE</span> <span class="heading-second-half">ORIGIN</span></span>
-          <h2>A trade heritage written in the soil.</h2>
-        </div>
-        <div class="origin-right reveal-up">
-          <p class="origin-copy">"The Malabar coast is where the world's spice trade began, over two thousand years ago. Kerala's high ranges still grow its cardamom, pepper and ginger the old way â€” high elevation, slow curing, small holdings."</p>
-          <p class="origin-copy">"Kassia Naturals was built by founders who chose to return to that source. Every spice we ship is single-origin Kerala, traceable to where it grew. Nothing blended, nothing borrowed."</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- â•â• THE FIVE SPICES â€” Cards Menu â•â• -->
-    <section id="spices" class="spices-card-section">
-      <div class="container">
-        <div class="spices-header reveal-up">
-          <span class="eyebrow"><span class="heading-first-half">OUR</span> <span class="heading-second-half">SPICES</span></span>
-          <h2>Five spices. One origin.</h2>
-          <p style="max-width:520px;margin:1rem auto 0;font-size:1.05rem;">Sourced lot by lot from Kerala's spice belt â€” each one singular in origin, graded by hand, and traceable to where it grew.</p>
-        </div>
-
-        <div class="spices-grid">
-          <!-- Cardamom -->
-          <a href="product-cardamom.html" class="spice-card cardamom reveal-up">
-            <div class="spice-card-inner">
-              <div class="spice-card-front">
-                <div class="spice-card-bg" style="background-image: url('assets/spice_cardamom.webp');"></div>
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cardamom</h3>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Hover for Details</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="spice-card-back">
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cardamom</h3>
-                    <p>Intensely aromatic, sweet and cool, from the hills that gave it their name.</p>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Explore Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Pepper -->
-          <a href="product-pepper.html" class="spice-card pepper reveal-up" style="transition-delay: 0.1s;">
-            <div class="spice-card-inner">
-              <div class="spice-card-front">
-                <div class="spice-card-bg" style="background-image: url('assets/spice_pepper.webp');"></div>
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Black Pepper</h3>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Hover for Details</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="spice-card-back">
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Black Pepper</h3>
-                    <p>High-range Malabar pepper with deep heat and bold aroma, sun-dried for three to four days.</p>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Explore Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Cloves -->
-          <a href="product-cloves.html" class="spice-card cloves reveal-up" style="transition-delay: 0.2s;">
-            <div class="spice-card-inner">
-              <div class="spice-card-front">
-                <div class="spice-card-bg" style="background-image: url('assets/spice_cloves.webp');"></div>
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cloves</h3>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Hover for Details</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="spice-card-back">
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cloves</h3>
-                    <p>Hand-picked buds from Kerala, rich in essential oil â€” sharp, warming and deeply aromatic.</p>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Explore Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Cinnamon -->
-          <a href="product-cinnamon.html" class="spice-card cinnamon reveal-up" style="transition-delay: 0.3s;">
-            <div class="spice-card-inner">
-              <div class="spice-card-front">
-                <div class="spice-card-bg" style="background-image: url('assets/spice_cinnamon.webp');"></div>
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cinnamon</h3>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Hover for Details</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="spice-card-back">
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Cinnamon</h3>
-                    <p>Delicate, sweet bark from Kerala's spice gardens â€” air-dried and rolled into neat quills.</p>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Explore Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Ginger -->
-          <a href="product-ginger.html" class="spice-card ginger reveal-up" style="transition-delay: 0.4s;">
-            <div class="spice-card-inner">
-              <div class="spice-card-front">
-                <div class="spice-card-bg" style="background-image: url('assets/spice_ginger.webp');"></div>
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Dried Ginger</h3>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Hover for Details</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="spice-card-back">
-                <div class="spice-card-content">
-                  <div class="spice-card-text">
-                    <h3>Dried Ginger</h3>
-                    <p>Sun-dried and fiery, with a clean citrus edge â€” slow-cured the traditional Keralan way.</p>
-                  </div>
-                  <div class="spice-card-btn">
-                    <span>Explore Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Kassia -->
-    <section class="why-section">
-      <div class="container">
-        <div class="section-header reveal-up">
-          <span class="eyebrow"><span class="heading-first-half">WHY</span> <span class="heading-second-half">KASSIA</span></span>
-          <h2>Crafted with integrity and transparency.</h2>
-        </div>
+    <!-- Global Header / Navigation -->
+    <header>
+      <div class="container nav-container">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+            <li class="nav-item"><a href="product-cardamom.html">Spices</a></li>
+            <li class="nav-item"><a href="story.html">Our Story</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
         
-        <div class="why-grid">
-          <!-- Card 1 -->
-          <div class="why-card reveal-up">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3 class="why-title">Single Origin</h3>
-            <p class="why-desc">Every batch comes from one origin â€” Kerala's spice belt â€” never blended across regions.</p>
-          </div>
-          <!-- Card 2 -->
-          <div class="why-card reveal-up">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-            </div>
-            <h3 class="why-title">Traceable</h3>
-            <p class="why-desc">We know where each lot grew, and we can show you. Traceability over scale, always.</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="why-card reveal-up">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <h3 class="why-title">Tested for Purity</h3>
-            <p class="why-desc">Every batch is tested before it ships. Every claim we make is one we can back.</p>
-          </div>
-          <!-- Card 4 -->
-          <div class="why-card reveal-up">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9L9 5H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M12 10v4M10 12h4"/></svg>
-            </div>
-            <h3 class="why-title">Export Grade</h3>
-            <p class="why-desc">Cleaned, graded and packed to international food-safety standards.</p>
-          </div>
-        </div>
+        <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- Depth Carousel Process Section -->
-    <section class="radial-process-section" id="process-section" style="overflow: hidden; padding-bottom: 5rem;">
-      <div class="container" style="text-align: center; margin-bottom: 2rem;">
-        <span class="eyebrow reveal-up"><span class="heading-first-half">OUR</span> <span class="heading-second-half">PROCESS</span></span>
-        <h2 class="reveal-up">From Malabar soil to you.</h2>
-      </div>
-
-      <div class="stack-carousel" id="process-carousel">
-        <div class="stack-carousel__track">
-          <!-- Step 1 -->
-          <div class="stack-carousel__card active">
-            <img class="stack-carousel__img" src="assets/process_grown.webp" alt="Grown">
-            <div class="stack-carousel__content">
-              <span class="stack-carousel__step">Step 1 â€” Grown</span>
-              <h3>Nurtured Naturally</h3>
-              <p>In the high ranges of Kerala, on small holdings, the traditional way.</p>
-            </div>
-          </div>
-          <!-- Step 2 -->
-          <div class="stack-carousel__card">
-            <img class="stack-carousel__img" src="assets/process_sourced.webp" alt="Sourced">
-            <div class="stack-carousel__content">
-              <span class="stack-carousel__step">Step 2 â€” Sourced</span>
-              <h3>Selected Lot By Lot</h3>
-              <p>Selected lot by lot from Kerala's spice belt, with origin recorded.</p>
-            </div>
-          </div>
-          <!-- Step 3 -->
-          <div class="stack-carousel__card">
-            <img class="stack-carousel__img" src="assets/process_graded.webp" alt="Graded">
-            <div class="stack-carousel__content">
-              <span class="stack-carousel__step">Step 3 â€” Graded</span>
-              <h3>Verified For Quality</h3>
-              <p>Hand-graded for size, colour and oil; batch-tested for purity.</p>
-            </div>
-          </div>
-          <!-- Step 4 -->
-          <div class="stack-carousel__card">
-            <img class="stack-carousel__img" src="assets/process_packed.webp" alt="Packed">
-            <div class="stack-carousel__content">
-              <span class="stack-carousel__step">Step 4 â€” Packed</span>
-              <h3>Sealed At Origin</h3>
-              <p>Sealed at origin and shipped fresh â€” never warehoused for seasons.</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-background"></div>
+        <canvas id="hero-scroll-bg"></canvas>
+        <div class="container">
+          <div class="hero-content" style="position: relative; z-index: 10;">
+            <span class="eyebrow reveal-up"><span class="heading-first-half">KASSIA</span> <span class="heading-second-half">NATURALS</span></span>
+            <h1 class="hero-title reveal-up">Seed to Spice.</h1>
+            <p class="hero-subtitle reveal-up">Single-origin Kerala spices. Every batch is lab-tested. Shipped from the Malabar coast.</p>
+            <div class="hero-actions reveal-up" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#spices" class="btn btn-primary">Explore Our Spices</a>
+              <a href="story.html" class="btn btn-secondary">Our Story</a>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Navigation -->
-        <div class="stack-carousel__nav">
-          <button class="stack-carousel__btn stack-carousel__btn--prev" aria-label="Previous">
-            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="stack-carousel__dots">
-            <span class="stack-carousel__dot active"></span>
-            <span class="stack-carousel__dot"></span>
-            <span class="stack-carousel__dot"></span>
-            <span class="stack-carousel__dot"></span>
+      <!-- Origin Strip -->
+      <section class="origin-strip">
+        <div class="container origin-grid">
+          <div class="origin-left reveal-up">
+            <span class="eyebrow"><span class="heading-first-half">THE</span> <span class="heading-second-half">ORIGIN</span></span>
+            <h2>A trade heritage written in the soil.</h2>
           </div>
-          <button class="stack-carousel__btn stack-carousel__btn--next" aria-label="Next">
-            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <div class="origin-right reveal-up">
+            <p class="origin-copy">The Malabar coast is where the world's spice trade began, over two thousand years ago. Kerala's high ranges still grow its cardamom, pepper, clove, cinnamon and ginger the old way — high elevation, slow curing, small holdings.</p>
+            <p class="origin-copy">Kassia Naturals is built at that source. Every spice we ship comes from one Kerala region — never blended across regions — hand-graded and lab-tested before it leaves. And we’re building direct relationships with the growers behind each lot, one estate at a time.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE FIVE SPICES — Cards Menu -->
+      <section id="spices" class="spices-card-section">
+        <div class="container">
+          <div class="spices-header reveal-up">
+            <span class="eyebrow"><span class="heading-first-half">OUR</span> <span class="heading-second-half">SPICES</span></span>
+            <h2>Five spices. One origin.</h2>
+            <p style="max-width: 620px; margin: 1rem auto 0; font-size: 1.1rem; line-height: 1.6;">From Kerala’s spice belt — each one single in origin, graded by hand, and lab-tested before it ships.</p>
+          </div>
+
+          <div class="spices-grid">
+            <!-- Cardamom -->
+            <a href="product-cardamom.html" class="spice-card cardamom reveal-up">
+              <div class="spice-card-inner">
+                <div class="spice-card-front">
+                  <div class="spice-card-bg" style="background-image: url('assets/spice_cardamom.webp');"></div>
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cardamom</h3>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Hover for Details</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="spice-card-back">
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cardamom</h3>
+                      <p>Intensely aromatic, sweet and cool, from the hills that gave it their name.</p>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Explore Now</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Pepper -->
+            <a href="product-pepper.html" class="spice-card pepper reveal-up" style="transition-delay: 0.1s;">
+              <div class="spice-card-inner">
+                <div class="spice-card-front">
+                  <div class="spice-card-bg" style="background-image: url('assets/spice_pepper.webp');"></div>
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Black Pepper</h3>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Hover for Details</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="spice-card-back">
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Black Pepper</h3>
+                      <p>High-range Malabar pepper with deep heat and bold aroma, sun-dried for three to four days.</p>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Explore Now</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Cloves -->
+            <a href="product-cloves.html" class="spice-card cloves reveal-up" style="transition-delay: 0.2s;">
+              <div class="spice-card-inner">
+                <div class="spice-card-front">
+                  <div class="spice-card-bg" style="background-image: url('assets/spice_cloves.webp');"></div>
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cloves</h3>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Hover for Details</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="spice-card-back">
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cloves</h3>
+                      <p>Hand-picked buds from Kerala, rich in essential oil — sharp, warming and deeply aromatic.</p>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Explore Now</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Cinnamon -->
+            <a href="product-cinnamon.html" class="spice-card cinnamon reveal-up" style="transition-delay: 0.3s;">
+              <div class="spice-card-inner">
+                <div class="spice-card-front">
+                  <div class="spice-card-bg" style="background-image: url('assets/spice_cinnamon.webp');"></div>
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cinnamon</h3>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Hover for Details</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="spice-card-back">
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Cinnamon</h3>
+                      <p>Delicate, sweet bark from Kerala's spice gardens — air-dried and rolled into neat quills.</p>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Explore Now</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Ginger -->
+            <a href="product-ginger.html" class="spice-card ginger reveal-up" style="transition-delay: 0.4s;">
+              <div class="spice-card-inner">
+                <div class="spice-card-front">
+                  <div class="spice-card-bg" style="background-image: url('assets/spice_ginger.webp');"></div>
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Dried Ginger</h3>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Hover for Details</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="spice-card-back">
+                  <div class="spice-card-content">
+                    <div class="spice-card-text">
+                      <h3>Dried Ginger</h3>
+                      <p>Sun-dried and fiery, with a clean citrus edge — slow-cured the traditional Keralan way.</p>
+                    </div>
+                    <div class="spice-card-btn">
+                      <span>Explore Now</span>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Kassia -->
+      <section class="why-section">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <span class="eyebrow"><span class="heading-first-half">WHY</span> <span class="heading-second-half">KASSIA</span></span>
+            <h2>Crafted with integrity and transparency.</h2>
+          </div>
+          
+          <div class="why-grid">
+            <!-- Card 1: Single Origin -->
+            <div class="why-card reveal-up">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3 class="why-title">Single Origin</h3>
+              <p class="why-desc">Every batch comes from one origin — Kerala’s spice belt — never blended across regions.</p>
+            </div>
+
+            <!-- Card 2: Traceable -->
+            <div class="why-card reveal-up">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+              </div>
+              <h3 class="why-title">Traceable</h3>
+              <p class="why-desc">We source from a single Kerala region today, and we’re building direct relationships with growers across the Idukki hills — working toward every spice traceable to the estate it came from.</p>
+            </div>
+
+            <!-- Card 3: Tested for Purity -->
+            <div class="why-card reveal-up">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3 class="why-title">Tested for Purity</h3>
+              <p class="why-desc">Our spices are tested at origin, then checked again by an independent lab — moisture, oil content and cleanliness — with a certificate of analysis on every shipment.</p>
+            </div>
+
+            <!-- Card 4: Export Grade -->
+            <div class="why-card reveal-up">
+              <div class="why-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9L9 5H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M12 10v4M10 12h4"/></svg>
+              </div>
+              <h3 class="why-title">Export Grade</h3>
+              <p class="why-desc">Cleaned, graded for size, colour and oil, and packed for export.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depth Carousel Process Section -->
+      <section class="radial-process-section" id="process-section" style="overflow: hidden; padding-bottom: 5rem;">
+        <div class="container" style="text-align: center; margin-bottom: 2rem;">
+          <span class="eyebrow reveal-up"><span class="heading-first-half">OUR</span> <span class="heading-second-half">PROCESS</span></span>
+          <h2 class="reveal-up">From Malabar soil to you.</h2>
+        </div>
+
+        <div class="stack-carousel" id="process-carousel">
+          <div class="stack-carousel__track">
+            <!-- Step 1 -->
+            <div class="stack-carousel__card active">
+              <img class="stack-carousel__img" src="assets/process_grown.webp" alt="Grown">
+              <div class="stack-carousel__content">
+                <span class="stack-carousel__step">Step 1 — Grown</span>
+                <h3>Nurtured Naturally</h3>
+                <p>In the high ranges of Kerala, on small holdings, the traditional way.</p>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="stack-carousel__card">
+              <img class="stack-carousel__img" src="assets/process_sourced.webp" alt="Sourced">
+              <div class="stack-carousel__content">
+                <span class="stack-carousel__step">Step 2 — Sourced</span>
+                <h3>Selected Lot By Lot</h3>
+                <p>Selected lot by lot from Kerala's spice belt, with origin recorded.</p>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="stack-carousel__card">
+              <img class="stack-carousel__img" src="assets/process_graded.webp" alt="Graded">
+              <div class="stack-carousel__content">
+                <span class="stack-carousel__step">Step 3 — Verified for quality</span>
+                <h3>Verified For Quality</h3>
+                <p>Hand-graded for size, colour and oil, then lab-tested batch by batch before export.</p>
+              </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="stack-carousel__card">
+              <img class="stack-carousel__img" src="assets/process_packed.jpg" alt="Packed">
+              <div class="stack-carousel__content">
+                <span class="stack-carousel__step">Step 4 — Packed</span>
+                <h3>Sealed At Origin</h3>
+                <p>Sealed at origin and shipped fresh — never warehoused for seasons.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="stack-carousel__nav">
+            <button class="stack-carousel__btn stack-carousel__btn--prev" aria-label="Previous">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="stack-carousel__dots">
+              <span class="stack-carousel__dot active"></span>
+              <span class="stack-carousel__dot"></span>
+              <span class="stack-carousel__dot"></span>
+              <span class="stack-carousel__dot"></span>
+            </div>
+            <button class="stack-carousel__btn stack-carousel__btn--next" aria-label="Next">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Story Teaser / Narrative -->
+      <section class="story-teaser">
+        <div class="container story-teaser-content reveal-up" style="max-width: 860px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow"><span class="heading-first-half">NARRATIVE</span></span>
+          <h2 style="margin-bottom: 2rem;">A return to source.</h2>
+          <p style="font-size: 1.15rem; line-height: 1.85; margin-bottom: 1.5rem; text-align: left;">Kassia Naturals exists to remain close to each spice throughout its journey — from the soil in which it grows to the moment it is used — and to remain accountable for every stage in between.</p>
+          <p style="font-size: 1.15rem; line-height: 1.85; margin-bottom: 1.5rem; text-align: left;">We believe quality is the product of care that can be demonstrated: fair value returned to those who cultivate and tend the crop, quality verified rather than assumed — every batch independently tested, with a certificate of analysis accompanying each shipment — and trade founded on lasting relationships rather than single transactions.</p>
+          <p style="font-size: 1.15rem; line-height: 1.85; margin-bottom: 2.5rem; text-align: left;">We measure ourselves not by volume, but by what we can stand behind: a spice’s origin, its handling, and what it carries to the table.</p>
+          <a href="story.html" class="btn btn-secondary">Read Our Story</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <a href="index.html" class="footer-logo" aria-label="Kassia Naturals Home">Kassia Naturals</a>
+          <p class="footer-tagline">Single-origin Kerala spices. Lab-tested, every batch.</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-brand-info">
+            <img src="company.jpeg" alt="Rari & Co. Pvt Ltd" class="footer-company-logo">
+            <p class="footer-legal">Kassia Naturals is a brand of Rari & Co., Kerala, India. &copy; 2026 Rari & Co. All rights reserved.</p>
+          </div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-cardamom.html">Products</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </footer>
 
-    </section>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=12379"></script>
 
-    <!-- Story Teaser -->
-    <section class="story-teaser">
-      <div class="container story-teaser-content reveal-up">
-        <span class="eyebrow"><span class="heading-first-half">NARRATIVE</span></span>
-        <h2>A return to source.</h2>
-        <p>"We left careers abroad to go back to where spice began â€” the Malabar coast. Kassia Naturals exists to make 'single origin' mean something you can verify: spices traced to where they grew, tested batch by batch, and shipped from Kerala with nothing in between that doesn't need to be there."</p>
-        <a href="story.html" class="btn btn-secondary">Read Our Story</a>
-      </div>
-    </section>
-
-    <!-- Certifications Strip (Hidden/Commented Out until credentials are confirmed) -->
-    <!-- 
-    <section class="certifications-strip">
-      <div class="container certifications-content">
-        <span class="eyebrow"><span class="heading-first-half">QUALITY YOU</span> <span class="heading-second-half">CAN VERIFY</span></span>
-        <p>Registered and certified for export from India. Certificates of Analysis and export documentation available with every shipment.</p>
-      </div>
-    </section>
-    -->
-  </main>
-
-  <!-- Global Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <a href="index.html" class="footer-logo" aria-label="Kassia Naturals Home">Kassia Naturals</a>
-        <p class="footer-tagline">"Single-origin Kerala spices, traceable to source."</p>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-brand-info">
-          <img src="company.jpeg" alt="Rari & Co. Pvt Ltd" class="footer-company-logo">
-          <p class="footer-legal">Kassia Naturals is a brand of Rari & Co., Kerala, India. &copy; 2026 Rari & Co. All rights reserved.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product-cardamom.html">Products</a></li>
-          <li><a href="story.html">Our Story</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="js/main.js?v=12379"></script>
-
-  <!-- Headline rotator script removed -->
-
-  <!-- Image Sequence Scroll Animation -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const canvas = document.getElementById('hero-scroll-bg');
-      if (!canvas) return;
-      const context = canvas.getContext('2d');
-      const heroSection = document.querySelector('.hero');
-      
-      let isDesktop = window.innerWidth >= 768;
-      let folder = isDesktop ? 'DESTOP' : 'MOB1';
-      let extension = 'webp';
-      
-      const resizeCanvas = () => {
-        canvas.width = heroSection.clientWidth;
-        canvas.height = heroSection.clientHeight;
-      };
-      resizeCanvas();
-
-      let images = [];
-      const imageSeq = { frame: 0 };
-      const frameCount = 300;
-
-      const currentFrame = index => (
-        `${folder}/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.${extension}?v=mob1_v1`
-      );
-
-      const preloadImages = () => {
-        images = [];
-        for (let i = 0; i < frameCount; i++) {
-          const img = new Image();
-          img.src = currentFrame(i);
-          images.push(img);
-        }
-        images[0].onload = render;
-      };
-      
-      preloadImages();
-
-      // Handle resize
-      window.addEventListener('resize', () => {
-        const newIsDesktop = window.innerWidth >= 768;
-        if (newIsDesktop !== isDesktop) {
-          isDesktop = newIsDesktop;
-          folder = isDesktop ? 'DESTOP' : 'MOB1';
-          preloadImages();
-        }
+    <!-- Image Sequence Scroll Animation -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const canvas = document.getElementById('hero-scroll-bg');
+        if (!canvas) return;
+        const context = canvas.getContext('2d');
+        const heroSection = document.querySelector('.hero');
+        
+        let isDesktop = window.innerWidth >= 768;
+        let folder = isDesktop ? 'DESTOP' : 'MOB1';
+        let extension = 'webp';
+        
+        const resizeCanvas = () => {
+          canvas.width = heroSection.clientWidth;
+          canvas.height = heroSection.clientHeight;
+        };
         resizeCanvas();
-        render();
+
+        let images = [];
+        const imageSeq = { frame: 0 };
+        const frameCount = 300;
+
+        const currentFrame = index => (
+          `${folder}/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.${extension}?v=mob1_v1`
+        );
+
+        const preloadImages = () => {
+          images = [];
+          for (let i = 0; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+            images.push(img);
+          }
+          images[0].onload = render;
+        };
+        
+        preloadImages();
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+          const newIsDesktop = window.innerWidth >= 768;
+          if (newIsDesktop !== isDesktop) {
+            isDesktop = newIsDesktop;
+            folder = isDesktop ? 'DESTOP' : 'MOB1';
+            preloadImages();
+          }
+          resizeCanvas();
+          render();
+        });
+
+        gsap.to(imageSeq, {
+          frame: frameCount - 1,
+          snap: "frame",
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".hero",
+            pin: true,
+            start: "top top",
+            end: "+=3000",
+            scrub: 0.4,
+            toggleClass: { targets: "header", className: "hero-glassy" }
+          },
+          onUpdate: render
+        });
+
+        function render() {
+          const img = images[imageSeq.frame];
+          if (!img || !img.complete) return;
+          
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          
+          const hRatio = canvas.width / img.width;
+          const vRatio = canvas.height / img.height;
+          const ratio  = Math.max(hRatio, vRatio);
+          const centerShift_x = (canvas.width - img.width*ratio) / 2;
+          const centerShift_y = (canvas.height - img.height*ratio) / 2;  
+          
+          context.drawImage(img, 0, 0, img.width, img.height,
+                            centerShift_x, centerShift_y, img.width*ratio, img.height*ratio);  
+        }
       });
+    </script>
 
-      gsap.to(imageSeq, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".hero",
-          pin: true,
-          start: "top top",
-          end: "+=3000", // 3000px of scrolling for the animation
-          scrub: 0.4, // Slightly increased delay for smoother transition
-          toggleClass: { targets: "header", className: "hero-glassy" }
-        },
-        onUpdate: render
+    <!-- Fix ScrollTrigger Order -->
+    <script>
+      window.addEventListener('load', () => {
+        if (typeof ScrollTrigger !== 'undefined') {
+          ScrollTrigger.sort();
+          ScrollTrigger.refresh();
+        }
       });
-
-      function render() {
-        const img = images[imageSeq.frame];
-        if (!img || !img.complete) return;
-        
-        context.clearRect(0, 0, canvas.width, canvas.height);
-        
-        const hRatio = canvas.width / img.width;
-        const vRatio = canvas.height / img.height;
-        // Use Math.max so the image fills the entire screen (cover)
-        const ratio  = Math.max(hRatio, vRatio);
-        const centerShift_x = (canvas.width - img.width*ratio) / 2;
-        const centerShift_y = (canvas.height - img.height*ratio) / 2;  
-        
-        context.drawImage(img, 0, 0, img.width, img.height,
-                          centerShift_x, centerShift_y, img.width*ratio, img.height*ratio);  
-      }
-    });
-  </script>
-
-
-
-  <!-- Fix ScrollTrigger Order -->
-  <script>
-    window.addEventListener('load', () => {
-      if (typeof ScrollTrigger !== 'undefined') {
-        // Sort triggers by their position in the DOM so that the Hero pin 
-        // offset is correctly propagated to all sections below it.
-        ScrollTrigger.sort();
-        ScrollTrigger.refresh();
-      }
-    });
-  </script>
+    </script>
 
   </div> <!-- End content-wrapper -->
   <!-- Particles.js -->
@@ -744,11 +715,3 @@
   <script src="js/particles-config.js?v=13"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
