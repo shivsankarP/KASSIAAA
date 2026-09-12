@@ -5,181 +5,700 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Tags -->
-  <title>Contact Us â€” Kassia Naturals | Traceable Kerala Spices</title>
-  <meta name="description" content="Get in touch with Kassia Naturals. Whether you are a chef, distributor, retailer, or home cook, we would love to share our single-origin spices.">
+  <title>Contact Our Trade Desk — Kassia Naturals | Single-Origin Kerala Spices</title>
+  <meta name="description" content="Contact the Kassia Naturals trade desk. Sourcing single-origin Kerala spices for importers, distributors, food manufacturers and specialty retailers.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="css/style.css?v=202609122330">
+  <link rel="stylesheet" href="css/style.css?v=202609130020">
   
   <!-- SVG Favicon / Icon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸŒ¿</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+  <style>
+    /* Contact Page Specific Enhancements */
+    .contact-hero {
+      padding-top: calc(var(--header-height) + 4rem);
+      padding-bottom: 7rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 4.5rem;
+      align-items: start;
+    }
+    @media (max-width: 991px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+      }
+    }
+    .contact-details h1 {
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      margin-bottom: 1.25rem;
+      line-height: 1.1;
+      color: #ffffff;
+    }
+    .contact-lead {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 2.5rem;
+    }
+    .contact-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 2rem;
+    }
+    .contact-info-item h4 {
+      font-family: 'Anton', Impact, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-cardamom) !important;
+      margin-bottom: 0.35rem;
+    }
+    .contact-info-item p {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #ffffff !important;
+      margin: 0;
+    }
+    .contact-info-item a {
+      color: #ffffff !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .contact-info-item a:hover {
+      color: var(--accent-cardamom) !important;
+      text-decoration: underline;
+    }
+    .whatsapp-badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--accent-cardamom);
+      opacity: 0.9;
+      margin-top: 0.2rem;
+    }
+
+    /* Form Styles */
+    .contact-form-card {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 576px) {
+      .contact-form-card {
+        padding: 2rem 1.25rem;
+      }
+    }
+    .form-title {
+      font-family: 'Anton', Impact, sans-serif;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 640px) {
+      .form-row-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: var(--font-sans, sans-serif);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent-cardamom);
+      margin-bottom: 0.5rem;
+    }
+    .form-label-hint {
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: none;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 0.9rem 1.15rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background-color: rgba(0, 0, 0, 0.35);
+      font-family: var(--font-sans, sans-serif);
+      font-size: 0.95rem;
+      color: #ffffff;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      box-sizing: border-box;
+    }
+    .form-select option {
+      background-color: #0d1e15;
+      color: #ffffff;
+      padding: 8px;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-cardamom);
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 0 3px rgba(184, 219, 180, 0.2);
+    }
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* Product Checkboxes / Multi-select Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.6rem;
+      margin-top: 0.25rem;
+    }
+    .product-checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.88rem;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .product-checkbox-label:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    .product-checkbox-label input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+    .product-checkbox-label input[type="checkbox"]:checked {
+      background-color: var(--accent-cardamom);
+      border-color: var(--accent-cardamom);
+    }
+    .product-checkbox-label input[type="checkbox"]:checked::before {
+      content: "";
+      width: 8px;
+      height: 5px;
+      border-left: 2px solid #064734;
+      border-bottom: 2px solid #064734;
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+    .product-checkbox-label:has(input:checked) {
+      background: rgba(184, 219, 180, 0.12);
+      border-color: var(--accent-cardamom);
+    }
+
+    /* Consent Checkbox */
+    .consent-wrapper {
+      margin: 1.5rem 0 2rem;
+    }
+    .consent-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.85);
+      cursor: pointer;
+    }
+    .consent-label input[type="checkbox"] {
+      margin-top: 3px;
+      width: 17px;
+      height: 17px;
+      accent-color: var(--accent-cardamom);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    /* Message Banners */
+    .message-banner {
+      padding: 1.75rem;
+      border-radius: 16px;
+      margin-top: 1.5rem;
+      text-align: left;
+    }
+    .message-banner--success {
+      background: rgba(16, 75, 45, 0.85);
+      border: 1px solid var(--accent-cardamom);
+      color: #ffffff;
+    }
+    .message-banner--success h4 {
+      font-size: 1.25rem;
+      color: var(--accent-cardamom);
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans, sans-serif);
+      font-weight: 700;
+    }
+    .message-banner--success p {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.95);
+    }
+    .message-banner--error {
+      background: rgba(90, 20, 20, 0.85);
+      border: 1px solid #ff7b7b;
+      color: #ffffff;
+    }
+    .message-banner--error p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+      color: #ffd8d8;
+    }
+    .message-banner--error a, .message-banner--success a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body class="inner-page">
+  <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+  <div id="content-wrapper" style="position: relative; z-index: 1;">
 
-  <!-- Floating Logo Badge -->
-  <a href="index.html" class="logo-badge" aria-label="Kassia Naturals Home">
-    <img src="logo.webp" alt="Kassia Naturals" class="site-logo">
-  </a>
+    <!-- Floating Logo Badge -->
+    <a href="index.html" class="logo-badge" aria-label="Kassia Naturals Home">
+      <img src="logo.webp" alt="Kassia Naturals" class="site-logo">
+    </a>
 
-  <!-- Global Header / Navigation -->
-  <header>
-    <div class="container nav-container">
-      
-      <nav aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="product-cardamom.html">Spices</a></li>
-          <li class="nav-item"><a href="story.html">Our Story</a></li>
-          <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-      
-
-      
-      <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Contact Section -->
-    <section class="contact-hero">
-      <div class="container contact-grid">
-        <!-- Details Column -->
-        <div class="contact-details reveal-up">
-          <span class="eyebrow"><span class="heading-first-half">GET IN</span> <span class="heading-second-half">TOUCH</span></span>
-          <h1>We would love to hear from you.</h1>
-          <p>Whether you're a distributor, chef, retailer or home cook looking for traceable single-origin Kerala spices â€” we'd love to hear from you. Tell us what you need and we'll reply within 48 hours.</p>
-          
-          <ul class="contact-info-list" style="margin-top: auto;">
-            <li class="contact-info-item">
-              <h4>Direct Inquiries</h4>
-              <p><a href="mailto:hello@kassianaturals.com">hello@kassianaturals.com</a></p>
-            </li>
-            <li class="contact-info-item">
-              <h4>Headqu arters</h4>
-              <p>Rari & Co., Fort Kochi, Cochin, Kerala, 682001, India</p>
-            </li>
-            <li class="contact-info-item">
-              <h4>Follow the Origin</h4>
-              <p><a href="#" target="_blank" rel="noopener">@kassianaturals</a> &middot; Instagram</p>
-            </li>
+    <!-- Global Header / Navigation -->
+    <header>
+      <div class="container nav-container">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="product-cardamom.html">Spices</a></li>
+            <li class="nav-item"><a href="story.html">Our Story</a></li>
+            <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
           </ul>
-        </div>
+        </nav>
+        
+        <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-        <!-- Form Column -->
-        <div class="reveal-up">
-          <div class="contact-form-card">
-            <h3 style="margin-bottom: 2rem;">Send a Message</h3>
+    <main>
+      <!-- Contact Section -->
+      <section class="contact-hero">
+        <div class="container contact-grid">
+          <!-- Details Column -->
+          <div class="contact-details reveal-up">
+            <span class="eyebrow"><span class="heading-first-half">GET IN</span> <span class="heading-second-half">TOUCH</span></span>
+            <h1>Contact our trade desk</h1>
+            <p class="contact-lead">For importers, distributors, manufacturers and specialty retailers sourcing single-origin Kerala spices. Tell us the product, grade, quantity and destination, and we’ll reply with pricing and specification within one business day.</p>
             
-            <form action="#" method="POST" id="contactForm">
-              <!-- Name -->
-              <div class="form-group">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <h4>Trade Enquiries</h4>
+                <p><a href="mailto:trade@kassianaturals.com">trade@kassianaturals.com</a></p>
+              </li>
+              <li class="contact-info-item">
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/919535028940" target="_blank" rel="noopener">+91 95350 28940</a></p>
+                <span class="whatsapp-badge">Fastest route for trade enquiries</span>
+              </li>
+              <li class="contact-info-item">
+                <h4>Phone</h4>
+                <p><a href="tel:+919535028940">+91 95350 28940</a></p>
+              </li>
+              <li class="contact-info-item">
+                <h4>Registered Office</h4>
+                <p>Rari & Co. Private Limited, Kattappana, Idukki, Kerala 685508, India</p>
+              </li>
+              <li class="contact-info-item">
+                <h4>LinkedIn</h4>
+                <p><a href="https://www.linkedin.com" target="_blank" rel="noopener">Kassia Naturals</a></p>
+              </li>
+              <li class="contact-info-item">
+                <h4>Instagram</h4>
+                <p><a href="https://instagram.com/kassianaturals" target="_blank" rel="noopener">@kassianaturals</a></p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form Column -->
+          <div class="reveal-up">
+            <div class="contact-form-card">
+              <h2 class="form-title">Send an enquiry</h2>
+              
+              <form action="#" method="POST" id="contactForm" novalidate>
+                <!-- Full Name & Company -->
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="fullname" class="form-label">Full name</label>
+                    <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Your name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Company name" required>
+                  </div>
+                </div>
+
+                <!-- Email & Phone / WhatsApp -->
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+country code" required>
+                  </div>
+                </div>
+
+                <!-- Country & Destination Port -->
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" name="country" class="form-select" required>
+                      <option value="" disabled selected>Select your country</option>
+                      <option value="United States">United States</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                      <option value="France">France</option>
+                      <option value="Japan">Japan</option>
+                      <option value="India">India</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="Chile">Chile</option>
+                      <option value="China">China</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Finland">Finland</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Israel">Israel</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Jordan">Jordan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kuwait">Kuwait</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Norway">Norway</option>
+                      <option value="Oman">Oman</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="Romania">Romania</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="South Korea">South Korea</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="Taiwan">Taiwan</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Turkey">Turkey</option>
+                      <option value="Vietnam">Vietnam</option>
+                      <option value="Other">Other Country</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="destination_port" class="form-label">Destination port</label>
+                    <input list="ports-list" id="destination_port" name="destination_port" class="form-input" placeholder="Start typing — e.g. Rotterdam, Jebel Ali">
+                    <datalist id="ports-list">
+                      <option value="Rotterdam (Netherlands)">
+                      <option value="Jebel Ali, Dubai (UAE)">
+                      <option value="Hamburg (Germany)">
+                      <option value="New York / New Jersey (USA)">
+                      <option value="Singapore">
+                      <option value="London Gateway / Felixstowe (UK)">
+                      <option value="Antwerp (Belgium)">
+                      <option value="Le Havre (France)">
+                      <option value="Los Angeles / Long Beach (USA)">
+                      <option value="Port Klang (Malaysia)">
+                      <option value="Dammam (Saudi Arabia)">
+                      <option value="Jeddah Islamic Port (Saudi Arabia)">
+                      <option value="Yokohama / Tokyo (Japan)">
+                      <option value="Sydney / Melbourne (Australia)">
+                      <option value="Colombo (Sri Lanka)">
+                      <option value="Nhava Sheva, Mumbai (India)">
+                      <option value="Cochin Port (India)">
+                      <option value="Alexandria (Egypt)">
+                      <option value="Santos (Brazil)">
+                      <option value="Busan (South Korea)">
+                    </datalist>
+                  </div>
+                </div>
+
+                <!-- I am a... Profile -->
+                <div class="form-group">
+                  <label for="role" class="form-label">I am a…</label>
+                  <select id="role" name="role" class="form-select" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Importer / Distributor">Importer / Distributor</option>
+                    <option value="Food manufacturer">Food manufacturer</option>
+                    <option value="Spice blender or grinder">Spice blender or grinder</option>
+                    <option value="Specialty retailer">Specialty retailer</option>
+                    <option value="Foodservice or HORECA">Foodservice or HORECA</option>
+                    <option value="Extract or oleoresin processor">Extract or oleoresin processor</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Products of interest (Multi-select) -->
+                <div class="form-group">
+                  <label class="form-label">
+                    <span>Products of interest</span>
+                    <span class="form-label-hint">Select all that apply</span>
+                  </label>
+                  <div class="products-grid">
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Green cardamom">
+                      <span>Green cardamom</span>
+                    </label>
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Black pepper">
+                      <span>Black pepper</span>
+                    </label>
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Cloves">
+                      <span>Cloves</span>
+                    </label>
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Cassia cinnamon">
+                      <span>Cassia cinnamon</span>
+                    </label>
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Dried ginger">
+                      <span>Dried ginger</span>
+                    </label>
+                    <label class="product-checkbox-label">
+                      <input type="checkbox" name="products" value="Other" id="productOtherCheckbox">
+                      <span>Other</span>
+                    </label>
+                  </div>
+                  <!-- Revealed on selecting Other -->
+                  <div id="otherProductWrap" style="display: none; margin-top: 0.75rem;">
+                    <input type="text" id="other_product_text" name="other_product_text" class="form-input" placeholder="Specify other spice requirements">
+                  </div>
+                </div>
+
+                <!-- Approximate quantity & Enquiry type -->
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="quantity" class="form-label">Approximate quantity</label>
+                    <select id="quantity" name="quantity" class="form-select">
+                      <option value="" disabled selected>Select a range</option>
+                      <option value="Sample only">Sample only</option>
+                      <option value="Under 500 kg">Under 500 kg</option>
+                      <option value="500 kg – 1 MT">500 kg – 1 MT</option>
+                      <option value="1 – 5 MT">1 – 5 MT</option>
+                      <option value="5 – 20 MT">5 – 20 MT</option>
+                      <option value="Full container">Full container</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="enquiry_type" class="form-label">Enquiry type</label>
+                    <select id="enquiry_type" name="enquiry_type" class="form-select">
+                      <option value="" disabled selected>Select one</option>
+                      <option value="Sample request">Sample request</option>
+                      <option value="Quotation">Quotation</option>
+                      <option value="General enquiry">General enquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Your message -->
+                <div class="form-group">
+                  <label for="message" class="form-label">Your message</label>
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Specification requirements, timelines, anything else"></textarea>
+                </div>
+
+                <!-- Consent -->
+                <div class="consent-wrapper">
+                  <label class="consent-label" for="consent">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <span>I agree that Kassia Naturals may store and use these details to respond to my enquiry.</span>
+                  </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem; font-size: 1.05rem;">Send enquiry</button>
+              </form>
+              
+              <!-- Success Message Box -->
+              <div id="successMsg" class="message-banner message-banner--success" style="display: none;">
+                <h4>Thank you — your enquiry has reached us.</h4>
+                <p>We reply within one business day (IST). For anything urgent, WhatsApp is the fastest route: <a href="https://wa.me/919535028940" target="_blank" rel="noopener"><strong>+91 95350 28940</strong></a>.</p>
               </div>
 
-              <!-- Email -->
-              <div class="form-group">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+              <!-- Error Message Box -->
+              <div id="errorMsg" class="message-banner message-banner--error" style="display: none;">
+                <p>Something went wrong sending that. Please email us directly at <a href="mailto:trade@kassianaturals.com">trade@kassianaturals.com</a> and we’ll pick it up straight away.</p>
               </div>
-
-              <!-- Role Select -->
-              <div class="form-group">
-                <label for="role" class="form-label">I am a...</label>
-                <select id="role" name="role" class="form-select" required>
-                  <option value="" disabled selected>Select your profile</option>
-                  <option value="distributor">Distributor</option>
-                  <option value="chef">Chef</option>
-                  <option value="retailer">Retailer</option>
-                  <option value="home-cook">Home Cook</option>
-                </select>
-              </div>
-
-              <!-- Message -->
-              <div class="form-group" style="margin-bottom: 2.5rem;">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
-              </div>
-
-              <!-- Submit -->
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-            </form>
-            
-            <!-- Success Message Box -->
-            <div id="successMsg" style="display: none; background-color: var(--accent-cardamom-light); border: 1px solid var(--accent-cardamom); padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem; text-align: center;">
-              <h4 style="color: var(--accent-cardamom); margin-bottom: 0.5rem;">Thank you!</h4>
-              <p style="font-size: 0.9rem; color: var(--color-forest); margin-bottom: 0;">We've received your message and will respond within 48 hours.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- Global Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <a href="index.html" class="footer-logo" aria-label="Kassia Naturals Home">Kassia Naturals</a>
-        <p class="footer-tagline">"Single-origin Kerala spices, traceable to source."</p>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-brand-info">
-          <img src="company.jpeg" alt="Rari & Co. Pvt Ltd" class="footer-company-logo">
-          <p class="footer-legal">Kassia Naturals is a brand of Rari & Co., Kerala, India. &copy; 2026 Rari & Co. All rights reserved.</p>
+    <!-- Global Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <a href="index.html" class="footer-logo" aria-label="Kassia Naturals Home">Kassia Naturals</a>
+          <p class="footer-tagline">Single-origin Kerala spices. Lab-tested, every batch.</p>
         </div>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product-cardamom.html">Products</a></li>
-          <li><a href="story.html">Our Story</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="footer-bottom">
+          <div class="footer-brand-info">
+            <img src="company.jpeg" alt="Rari & Co. Pvt Ltd" class="footer-company-logo">
+            <p class="footer-legal">Kassia Naturals is a brand of Rari & Co., Kerala, India. &copy; 2026 Rari & Co. All rights reserved.</p>
+          </div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-cardamom.html">Products</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="js/main.js?v=12379"></script>
-  
-  <!-- Interactive Form Handling -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const form = document.getElementById('contactForm');
-      const success = document.getElementById('successMsg');
-      
-      if (form) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          // Simulate form submission animation
-          gsap.to(form, { 
-            opacity: 0, 
-            y: -20, 
-            duration: 0.5, 
-            onComplete: () => {
-              form.style.display = 'none';
-              success.style.display = 'block';
-              gsap.fromTo(success, 
-                { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, duration: 0.5 }
-              );
-            } 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js?v=12379"></script>
+    
+    <!-- Interactive Form Handling -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('successMsg');
+        const error = document.getElementById('errorMsg');
+        const otherCheckbox = document.getElementById('productOtherCheckbox');
+        const otherWrap = document.getElementById('otherProductWrap');
+        
+        // Toggle Other product input
+        if (otherCheckbox && otherWrap) {
+          otherCheckbox.addEventListener('change', () => {
+            if (otherCheckbox.checked) {
+              otherWrap.style.display = 'block';
+              document.getElementById('other_product_text').focus();
+            } else {
+              otherWrap.style.display = 'none';
+            }
           });
-        });
-      }
-    });
-  </script>
+        }
+        
+        if (form) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Validate required fields
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+              if (field.type === 'checkbox') {
+                if (!field.checked) isValid = false;
+              } else if (!field.value.trim()) {
+                isValid = false;
+              }
+            });
+            
+            if (!isValid) {
+              // Highlight first invalid field
+              for (const field of requiredFields) {
+                if ((field.type === 'checkbox' && !field.checked) || (!field.type !== 'checkbox' && !field.value.trim())) {
+                  field.focus();
+                  field.style.borderColor = '#ff7b7b';
+                  break;
+                }
+              }
+              return;
+            }
+
+            // Animate submission
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Sending enquiry...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+              gsap.to(form, { 
+                opacity: 0, 
+                y: -15, 
+                duration: 0.4, 
+                onComplete: () => {
+                  form.style.display = 'none';
+                  success.style.display = 'block';
+                  gsap.fromTo(success, 
+                    { opacity: 0, y: 15 },
+                    { opacity: 1, y: 0, duration: 0.4 }
+                  );
+                } 
+              });
+            }, 600);
+          });
+        }
+      });
+    </script>
 
   </div> <!-- End content-wrapper -->
   <!-- Particles.js -->
@@ -187,11 +706,3 @@
   <script src="js/particles-config.js?v=13"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
