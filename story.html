@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Tags -->
-  <title>Our Story â€” Kassia Naturals | A Return to Source</title>
-  <meta name="description" content="Why we returned to the Malabar coast to build a spice brand where single origin is a verifiable fact â€” starting with green cardamom.">
+  <title>Our Story — Kassia Naturals | A Return to Source</title>
+  <meta name="description" content="Traders came to the Malabar coast for spice long before it reached the world's kitchens. Kassia Naturals is built to shorten that chain and work directly at the source in Idukki, Kerala.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
 
   <!-- Styling -->
   <link rel="stylesheet" href="css/style.css?v=202609121805">
@@ -19,8 +19,8 @@
   <style>
     /* Story Hero & Video Sizing Constraints */
     .story-hero {
-      padding-top: calc(var(--header-height) + 2rem) !important;
-      padding-bottom: 2.5rem !important;
+      padding-top: calc(var(--header-height) + 2.5rem) !important;
+      padding-bottom: 2rem !important;
       text-align: center;
     }
     .story-hero h1 {
@@ -49,6 +49,97 @@
       display: block !important;
       border-radius: 20px !important;
     }
+
+    /* Narrative Content Layout */
+    .story-narrative {
+      padding-bottom: 4rem;
+    }
+    .story-content-container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .story-block {
+      margin-bottom: 3.5rem;
+    }
+    .story-block p {
+      font-size: 1.15rem;
+      line-height: 1.85;
+      color: var(--color-muted);
+      margin-bottom: 1.35rem;
+    }
+    .story-block p:last-child {
+      margin-bottom: 0;
+    }
+    .story-highlight-block {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 3rem;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    .story-highlight-block h3 {
+      margin-bottom: 1rem;
+      color: #ffffff;
+      font-size: 1.8rem;
+    }
+
+    /* Closing CTA */
+    .story-closing {
+      text-align: center;
+      margin: 6rem 0 4rem;
+      padding-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .story-closing h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      margin-bottom: 1.75rem;
+    }
+
+    /* Company Foot of Page Section */
+    .company-footer-section {
+      background: rgba(0, 0, 0, 0.25);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3.5rem 0 2rem;
+      margin-top: 3rem;
+    }
+    .company-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2.25rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+    .company-card-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .company-card-item.full-width {
+      grid-column: 1 / -1;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .company-card-item.range-item {
+      grid-column: 1 / -1;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .company-card-label {
+      font-family: 'Anton', Impact, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-cardamom);
+    }
+    .company-card-val {
+      font-size: 1.05rem;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
     @media (max-width: 768px) {
       .story-hero {
         padding-top: calc(var(--header-height) + 1.25rem) !important;
@@ -59,11 +150,21 @@
         border-radius: 14px !important;
         max-height: 280px !important;
       }
+      .story-highlight-block {
+        padding: 1.75rem;
+      }
+      .story-block p {
+        font-size: 1.05rem;
+      }
+      .company-card {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
     }
   </style>
   
   <!-- SVG Favicon / Icon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸŒ¿</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
 </head>
 <body class="inner-page">
 
@@ -75,7 +176,6 @@
   <!-- Global Header / Navigation -->
   <header>
     <div class="container nav-container">
-      
       <nav aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
@@ -84,8 +184,6 @@
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      
-
       
       <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
         <span></span>
@@ -112,42 +210,68 @@
 
     <!-- Narrative Blocks -->
     <section class="story-narrative">
-      <div class="container">
-        <!-- Block 1 -->
+      <div class="container story-content-container">
+        <!-- WHERE SPICE BEGAN -->
         <div class="story-block reveal-up">
           <span class="eyebrow"><span class="heading-first-half">WHERE SPICE</span> <span class="heading-second-half">BEGAN</span></span>
-          <p>"Long before spice reached the world's kitchens, ships came to the Malabar coast for it. Kerala's high ranges still produce some of the finest cardamom, pepper and ginger on earth â€” grown on small holdings, cured slowly, the way it has been done for generations."</p>
+          <p>Traders came to the Malabar coast for spice long before it reached the world’s kitchens. Kerala’s high ranges still grow some of the finest cardamom, pepper, clove, cinnamon and ginger anywhere — on small holdings, cured slowly, much as they have been for generations.</p>
+          <p>Idukki, where we are based, produces most of India’s small cardamom. We didn’t choose the district for the story; we chose it because that is where the spice is.</p>
+          <p>The trade, though, runs on distance. By the time a lot reaches an importer, few can say which hillside it grew on. Kassia Naturals was built to shorten that chain — to work at the source rather than add another link between it and the buyer.</p>
         </div>
 
-        <!-- Block 2 -->
+        <!-- HOW WE WORK -->
         <div class="story-block reveal-up" style="border-left: 2px solid var(--accent-cardamom); padding-left: 2rem;">
-          <span class="eyebrow"><span class="heading-first-half">WHY WE</span> <span class="heading-second-half">CAME BACK</span></span>
-          <p>"Kassia Naturals was founded by Ramesh and Riya, who left careers abroad to return to the source. Not to resell what a marketplace lists, but to build something rarer: a spice brand where 'single origin' is a verifiable fact, not a marketing line."</p>
-        </div>
-
-        <!-- Block 3 -->
-        <div class="story-block reveal-up">
           <span class="eyebrow"><span class="heading-first-half">HOW WE</span> <span class="heading-second-half">WORK</span></span>
-          <p>"We source lot by lot from Kerala's spice belt, beginning with our flagship, green cardamom. Every batch is recorded to its origin, hand-graded, and tested for purity before it ships. Traceability over scale: we would rather verify one lot completely than claim ten loosely."</p>
+          <p>We buy lot by lot from Kerala’s spice belt, beginning with our flagship, green cardamom. Each lot is coded, hand-graded, and tested — first at origin, then by an independent laboratory — and ships with a certificate of analysis covering moisture, oil content and cleanliness.</p>
+          <p>Our spice is single-origin by region: Idukki and the Western Ghats. We can tell you the district, the grade and the season. We cannot yet name the individual holding, so we do not claim to.</p>
         </div>
 
-        <!-- Block 4 -->
+        <!-- WHERE WE’RE GOING -->
         <div class="story-block reveal-up">
-          <span class="eyebrow"><span class="heading-first-half">WHERE WE'RE</span> <span class="heading-second-half">GOING</span></span>
-          <p>"Our next step is deepening roots â€” building direct partnerships with the farms we buy from, so that one day every pack carries the name of the holding it came from. Cardamom first; the wider basket of Kerala spices, herbs and botanicals to follow."</p>
+          <span class="eyebrow"><span class="heading-first-half">WHERE WE’RE</span> <span class="heading-second-half">GOING</span></span>
+          <p>Next comes depth. We are building direct relationships with the farms we buy from, so that in time a lot can carry the name of the holding it came from — cardamom first, then the rest of the range, and later dried fruit, herbal cuts and botanicals.</p>
+          <p>Certifications follow the same principle: we will hold them before we mention them.</p>
         </div>
 
-        <!-- Block 5 -->
-        <div class="story-block reveal-up" style="background-color: var(--bg-beige); padding: 3rem; border-radius: 20px; border: 1px solid var(--color-border);">
+        <!-- OUR WORD -->
+        <div class="story-block story-highlight-block reveal-up">
           <span class="eyebrow" style="color: var(--accent-cinnamon);"><span class="heading-first-half">OUR</span> <span class="heading-second-half">WORD</span></span>
-          <h3 style="margin-bottom: 1rem;">Built on Trust</h3>
-          <p>"Purity is non-negotiable. Heritage is a practice, not a layer of packaging. And every claim on our label is one we can back."</p>
+          <h3>Built on trust</h3>
+          <p>Three principles guide us: fair value for the people who grow and tend our spice, quality we can rely on batch after batch, and trade built on relationships that last rather than single transactions. Purity is not negotiable — and trust, like quality, is earned over time.</p>
         </div>
         
         <!-- Closing CTA -->
-        <div class="reveal-up" style="margin-top: 8rem; text-align: center;">
-          <h2 style="font-size: 2.8rem; margin-bottom: 2rem;">Taste the origin.</h2>
-          <a href="product-cardamom.html" class="btn btn-primary">Explore Our Spices</a>
+        <div class="story-closing reveal-up">
+          <h2>Taste the origin.</h2>
+          <a href="product-cardamom.html" class="btn btn-primary">Explore our spices</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Foot of Page Section -->
+    <section class="company-footer-section">
+      <div class="container story-content-container">
+        <div class="company-card reveal-up">
+          <div class="company-card-item full-width">
+            <span class="company-card-label">Company</span>
+            <span class="company-card-val">Kassia Naturals is a brand of Rari & Co. Private Limited</span>
+          </div>
+          <div class="company-card-item">
+            <span class="company-card-label">CIN</span>
+            <span class="company-card-val">U46305KL2026PTC104842</span>
+          </div>
+          <div class="company-card-item">
+            <span class="company-card-label">Incorporated</span>
+            <span class="company-card-val">2026</span>
+          </div>
+          <div class="company-card-item">
+            <span class="company-card-label">Registered Office</span>
+            <span class="company-card-val">Kattappana, Idukki, Kerala, India</span>
+          </div>
+          <div class="company-card-item range-item">
+            <span class="company-card-label">Range</span>
+            <span class="company-card-val">Green cardamom &middot; black pepper &middot; cloves &middot; cassia cinnamon &middot; dried ginger</span>
+          </div>
         </div>
       </div>
     </section>
@@ -158,7 +282,7 @@
     <div class="container">
       <div class="footer-top">
         <a href="index.html" class="footer-logo" aria-label="Kassia Naturals Home">Kassia Naturals</a>
-        <p class="footer-tagline">"Single-origin Kerala spices, traceable to source."</p>
+        <p class="footer-tagline">Single-origin Kerala spices, traceable to source.</p>
       </div>
       <div class="footer-bottom">
         <div class="footer-brand-info">
@@ -180,17 +304,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="js/main.js?v=12379"></script>
 
-  </div> <!-- End content-wrapper -->
   <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particles-config.js?v=13"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
