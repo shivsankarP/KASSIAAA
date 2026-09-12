@@ -87,49 +87,61 @@
       width: 100%;
       height: 460px;
       position: relative;
-      perspective: 1500px;
+      perspective: 1200px;
+      -webkit-perspective: 1200px;
       text-decoration: none;
+      cursor: pointer;
     }
     .spice-card-inner {
       position: relative;
       width: 100%;
       height: 100%;
-      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
       transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
       border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
     .spice-card:hover .spice-card-inner {
       transform: rotateY(180deg);
-      box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.25);
     }
     .spice-card-front, .spice-card-back {
       position: absolute;
       inset: 0;
+      width: 100%;
+      height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       border-radius: 20px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
     }
     .spice-card-front {
       justify-content: flex-end;
+      transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      z-index: 2;
     }
     .spice-card-back {
       transform: rotateY(180deg);
-      padding: 2.5rem;
-      justify-content: center;
+      -webkit-transform: rotateY(180deg);
+      padding: 2.25rem 2rem;
+      justify-content: space-between;
       align-items: center;
       text-align: center;
-      color: #fff;
+      color: #ffffff !important;
+      z-index: 1;
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
     
-    .spice-card.cardamom .spice-card-back { background: linear-gradient(135deg, #1A3322 0%, #294D36 100%); }
-    .spice-card.pepper .spice-card-back { background: linear-gradient(135deg, #1F1F1F 0%, #383838 100%); }
-    .spice-card.cloves .spice-card-back { background: linear-gradient(135deg, #3E1C15 0%, #5C2A20 100%); }
-    .spice-card.cinnamon .spice-card-back { background: linear-gradient(135deg, #5C2F15 0%, #8A461F 100%); }
-    .spice-card.ginger .spice-card-back { background: linear-gradient(135deg, #7A5317 0%, #A36F1F 100%); }
+    .spice-card.cardamom .spice-card-back { background: linear-gradient(145deg, #132b1c 0%, #1f422b 100%); }
+    .spice-card.pepper .spice-card-back { background: linear-gradient(145deg, #181818 0%, #2f2f2f 100%); }
+    .spice-card.cloves .spice-card-back { background: linear-gradient(145deg, #331610 0%, #4f2219 100%); }
+    .spice-card.cinnamon .spice-card-back { background: linear-gradient(145deg, #4d2610 0%, #753b19 100%); }
+    .spice-card.ginger .spice-card-back { background: linear-gradient(145deg, #664511 0%, #8c5e19 100%); }
 
     .spice-card-bg {
       position: absolute;
@@ -149,11 +161,11 @@
       background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
       z-index: 2;
     }
-    .spice-card.cardamom .spice-card-front::after { background: linear-gradient(to top, rgba(35, 75, 45, 0.95) 0%, rgba(35, 75, 45, 0.4) 50%, transparent 100%); }
-    .spice-card.pepper .spice-card-front::after { background: linear-gradient(to top, rgba(40, 40, 40, 0.95) 0%, rgba(40, 40, 40, 0.4) 50%, transparent 100%); }
-    .spice-card.cloves .spice-card-front::after { background: linear-gradient(to top, rgba(90, 40, 30, 0.95) 0%, rgba(90, 40, 30, 0.4) 50%, transparent 100%); }
-    .spice-card.cinnamon .spice-card-front::after { background: linear-gradient(to top, rgba(140, 70, 30, 0.95) 0%, rgba(140, 70, 30, 0.4) 50%, transparent 100%); }
-    .spice-card.ginger .spice-card-front::after { background: linear-gradient(to top, rgba(160, 110, 30, 0.95) 0%, rgba(160, 110, 30, 0.4) 50%, transparent 100%); }
+    .spice-card.cardamom .spice-card-front::after { background: linear-gradient(to top, rgba(20, 50, 30, 0.95) 0%, rgba(20, 50, 30, 0.4) 50%, transparent 100%); }
+    .spice-card.pepper .spice-card-front::after { background: linear-gradient(to top, rgba(30, 30, 30, 0.95) 0%, rgba(30, 30, 30, 0.4) 50%, transparent 100%); }
+    .spice-card.cloves .spice-card-front::after { background: linear-gradient(to top, rgba(60, 25, 20, 0.95) 0%, rgba(60, 25, 20, 0.4) 50%, transparent 100%); }
+    .spice-card.cinnamon .spice-card-front::after { background: linear-gradient(to top, rgba(90, 45, 20, 0.95) 0%, rgba(90, 45, 20, 0.4) 50%, transparent 100%); }
+    .spice-card.ginger .spice-card-front::after { background: linear-gradient(to top, rgba(110, 70, 20, 0.95) 0%, rgba(110, 70, 20, 0.4) 50%, transparent 100%); }
 
     .spice-card-content {
       position: relative;
@@ -164,20 +176,28 @@
       gap: 1.2rem;
       height: 100%;
       justify-content: flex-end;
+      box-sizing: border-box;
     }
     .spice-card-back .spice-card-content {
-      justify-content: center;
+      padding: 0;
+      justify-content: space-between;
       align-items: center;
       gap: 1.5rem;
+      width: 100%;
+      height: 100%;
     }
     .spice-card-text {
-      color: #fff;
+      color: #ffffff !important;
     }
-    .spice-card-text h3 {
-      font-family: var(--font-sans, sans-serif);
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 0.3rem;
+    .spice-card-text h3, 
+    .spice-card-back h3, 
+    .spice-card-back .spice-card-text h3 {
+      font-family: var(--font-sans, sans-serif) !important;
+      font-size: 2.2rem !important;
+      font-weight: 700 !important;
+      margin-bottom: 0.75rem !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       display: flex;
       align-items: baseline;
       gap: 0.6rem;
@@ -185,49 +205,50 @@
     }
     .spice-card-back .spice-card-text h3 {
       justify-content: center;
+      margin-top: 1rem !important;
     }
-    .spice-card-text h3 span {
-      font-size: 1.1rem;
-      font-weight: 700;
-      opacity: 0.8;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .spice-card-text p {
-      font-size: 0.95rem;
-      opacity: 0.9;
-      font-weight: 500;
-      margin: 0;
-      font-family: var(--font-sans, sans-serif);
-    }
-    .spice-card-back .spice-card-text p {
-      line-height: 1.6;
-      font-size: 1.05rem;
+    .spice-card-text p, 
+    .spice-card-back p, 
+    .spice-card-back .spice-card-text p,
+    .spices-card-section .spice-card-back p {
+      font-size: 1.05rem !important;
+      opacity: 0.95 !important;
+      font-weight: 400 !important;
+      margin: 0 !important;
+      font-family: var(--font-sans, sans-serif) !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      line-height: 1.7 !important;
+      text-align: center;
     }
     .spice-card-btn {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border-radius: 12px;
-      padding: 1rem 1.2rem;
+      padding: 0.9rem 1.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #fff;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       font-weight: 600;
-      font-size: 1.05rem;
-      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 1rem;
+      border: 1px solid rgba(255,255,255,0.25);
       font-family: var(--font-sans, sans-serif);
-      transition: background 0.3s ease, border-color 0.3s ease;
+      transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
       width: 100%;
       box-sizing: border-box;
+      text-decoration: none;
     }
     .spice-card-back .spice-card-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.35);
       margin-top: auto;
     }
     .spice-card:hover .spice-card-btn {
-      background: rgba(255, 255, 255, 0.2);
-      border-color: rgba(255,255,255,0.3);
+      background: rgba(255, 255, 255, 0.28);
+      border-color: rgba(255,255,255,0.5);
     }
     .spice-card-btn svg {
       transition: transform 0.3s ease;
