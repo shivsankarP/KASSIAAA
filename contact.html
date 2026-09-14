@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="css/style.css?v=202609130020">
+  <link rel="stylesheet" href="css/style.css?v=20260914v5">
   
   <!-- SVG Favicon / Icon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
@@ -41,12 +41,14 @@
       font-size: clamp(2.4rem, 4.5vw, 3.8rem);
       margin-bottom: 1.25rem;
       line-height: 1.1;
-      color: #ffffff;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
     }
     .contact-lead {
       font-size: 1.15rem;
       line-height: 1.8;
-      color: rgba(255, 255, 255, 0.85);
+      color: #D1E5CF !important;
+      -webkit-text-fill-color: #D1E5CF !important;
       margin-bottom: 2.5rem;
     }
     .contact-info-list {
@@ -56,63 +58,73 @@
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
       padding-top: 2rem;
     }
     .contact-info-item h4 {
-      font-family: 'Anton', Impact, sans-serif;
-      font-size: 0.85rem;
+      font-family: 'Anton', Impact, sans-serif !important;
+      font-size: 1rem !important;
       font-weight: 400;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--accent-cardamom) !important;
+      color: #DCEFD9 !important;
+      -webkit-text-fill-color: #DCEFD9 !important;
       margin-bottom: 0.35rem;
     }
     .contact-info-item p {
-      font-size: 1.05rem;
-      line-height: 1.5;
+      font-size: 1.1rem;
+      line-height: 1.6;
       color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       margin: 0;
     }
     .contact-info-item a {
       color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       text-decoration: none;
       transition: color 0.2s ease;
     }
     .contact-info-item a:hover {
-      color: var(--accent-cardamom) !important;
+      color: #DCEFD9 !important;
+      -webkit-text-fill-color: #DCEFD9 !important;
       text-decoration: underline;
     }
     .whatsapp-badge {
       display: inline-block;
       font-size: 0.85rem;
-      color: var(--accent-cardamom);
-      opacity: 0.9;
-      margin-top: 0.2rem;
+      color: #DCEFD9 !important;
+      background: rgba(220, 239, 217, 0.15);
+      border: 1px solid rgba(220, 239, 217, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      margin-top: 0.4rem;
+      font-weight: 500;
     }
 
     /* Form Styles */
     .contact-form-card {
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 24px;
       padding: 3rem 2.5rem;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     }
     @media (max-width: 576px) {
       .contact-form-card {
         padding: 2rem 1.25rem;
       }
     }
+    .contact-form-card .form-title,
     .form-title {
-      font-family: 'Anton', Impact, sans-serif;
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-      margin-bottom: 2rem;
+      font-family: 'Anton', Impact, sans-serif !important;
+      font-size: 2.2rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.03em !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      margin-bottom: 2rem !important;
     }
     .form-row-2 {
       display: grid;
@@ -128,123 +140,154 @@
     .form-group {
       margin-bottom: 1.5rem;
     }
+    .contact-form-card label,
+    .contact-form-card .form-label,
     .form-label {
-      display: flex;
+      display: flex !important;
       justify-content: space-between;
       align-items: baseline;
-      font-family: var(--font-sans, sans-serif);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--accent-cardamom);
-      margin-bottom: 0.5rem;
+      font-family: var(--font-sans, sans-serif) !important;
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      color: #DCEFD9 !important;
+      -webkit-text-fill-color: #DCEFD9 !important;
+      margin-bottom: 0.5rem !important;
     }
     .form-label-hint {
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.7) !important;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.7) !important;
       text-transform: none;
     }
     .form-input, .form-select, .form-textarea {
       width: 100%;
-      padding: 0.9rem 1.15rem;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      background-color: rgba(0, 0, 0, 0.35);
-      font-family: var(--font-sans, sans-serif);
-      font-size: 0.95rem;
-      color: #ffffff;
+      padding: 0.95rem 1.2rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background-color: rgba(0, 0, 0, 0.45) !important;
+      font-family: var(--font-sans, sans-serif) !important;
+      font-size: 1rem !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
       box-sizing: border-box;
     }
     .form-select option {
-      background-color: #0d1e15;
-      color: #ffffff;
-      padding: 8px;
+      background-color: #064734 !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      padding: 10px;
     }
     .form-input:focus, .form-select:focus, .form-textarea:focus {
       outline: none;
-      border-color: var(--accent-cardamom);
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 0 3px rgba(184, 219, 180, 0.2);
+      border-color: #DCEFD9 !important;
+      background-color: rgba(0, 0, 0, 0.6) !important;
+      box-shadow: 0 0 0 3px rgba(220, 239, 217, 0.25) !important;
     }
     .form-input::placeholder, .form-textarea::placeholder {
-      color: rgba(255, 255, 255, 0.45);
+      color: rgba(255, 255, 255, 0.55) !important;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.55) !important;
+    }
+    .form-input:-webkit-autofill,
+    .form-input:-webkit-autofill:hover,
+    .form-input:-webkit-autofill:focus,
+    .form-textarea:-webkit-autofill,
+    .form-select:-webkit-autofill {
+      -webkit-text-fill-color: #ffffff !important;
+      -webkit-box-shadow: 0 0 0px 1000px #092e22 inset !important;
+      transition: background-color 5000s ease-in-out 0s;
     }
 
     /* Product Checkboxes / Multi-select Grid */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 0.6rem;
-      margin-top: 0.25rem;
+      gap: 0.65rem;
+      margin-top: 0.35rem;
     }
+    .contact-form-card .product-checkbox-label,
     .product-checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.65rem 0.85rem;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      font-size: 0.88rem;
-      color: #ffffff;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.6rem !important;
+      padding: 0.7rem 0.9rem !important;
+      border-radius: 10px !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      font-size: 0.92rem !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
       cursor: pointer;
       user-select: none;
       transition: background 0.2s ease, border-color 0.2s ease;
+      margin-bottom: 0 !important;
+    }
+    .product-checkbox-label span {
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
     }
     .product-checkbox-label:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
     }
     .product-checkbox-label input[type="checkbox"] {
       appearance: none;
       -webkit-appearance: none;
-      width: 16px;
-      height: 16px;
-      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
       border-radius: 4px;
       outline: none;
       background: transparent;
       cursor: pointer;
       display: grid;
       place-content: center;
+      flex-shrink: 0;
       transition: border-color 0.2s, background-color 0.2s;
     }
     .product-checkbox-label input[type="checkbox"]:checked {
-      background-color: var(--accent-cardamom);
-      border-color: var(--accent-cardamom);
+      background-color: #DCEFD9 !important;
+      border-color: #DCEFD9 !important;
     }
     .product-checkbox-label input[type="checkbox"]:checked::before {
       content: "";
-      width: 8px;
+      width: 9px;
       height: 5px;
       border-left: 2px solid #064734;
       border-bottom: 2px solid #064734;
       transform: rotate(-45deg) translate(1px, -1px);
     }
     .product-checkbox-label:has(input:checked) {
-      background: rgba(184, 219, 180, 0.12);
-      border-color: var(--accent-cardamom);
+      background: rgba(220, 239, 217, 0.18) !important;
+      border-color: #DCEFD9 !important;
     }
 
     /* Consent Checkbox */
     .consent-wrapper {
       margin: 1.5rem 0 2rem;
     }
+    .contact-form-card .consent-label,
     .consent-label {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.88rem;
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.85);
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 0.75rem !important;
+      font-size: 0.92rem !important;
+      line-height: 1.5 !important;
+      color: rgba(255, 255, 255, 0.9) !important;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.9) !important;
       cursor: pointer;
+      margin-bottom: 0 !important;
+    }
+    .consent-label span {
+      color: rgba(255, 255, 255, 0.9) !important;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.9) !important;
     }
     .consent-label input[type="checkbox"] {
       margin-top: 3px;
-      width: 17px;
-      height: 17px;
-      accent-color: var(--accent-cardamom);
+      width: 18px;
+      height: 18px;
+      accent-color: #DCEFD9;
       cursor: pointer;
       flex-shrink: 0;
     }
@@ -258,12 +301,13 @@
     }
     .message-banner--success {
       background: rgba(16, 75, 45, 0.85);
-      border: 1px solid var(--accent-cardamom);
+      border: 1px solid #DCEFD9;
       color: #ffffff;
     }
     .message-banner--success h4 {
       font-size: 1.25rem;
-      color: var(--accent-cardamom);
+      color: #DCEFD9 !important;
+      -webkit-text-fill-color: #DCEFD9 !important;
       margin-bottom: 0.5rem;
       font-family: var(--font-sans, sans-serif);
       font-weight: 700;
@@ -273,6 +317,7 @@
       line-height: 1.6;
       margin: 0;
       color: rgba(255, 255, 255, 0.95);
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.95);
     }
     .message-banner--error {
       background: rgba(90, 20, 20, 0.85);
@@ -284,6 +329,7 @@
       line-height: 1.6;
       margin: 0;
       color: #ffd8d8;
+      -webkit-text-fill-color: #ffd8d8;
     }
     .message-banner--error a, .message-banner--success a {
       color: #ffffff;
@@ -393,112 +439,18 @@
                 <div class="form-row-2">
                   <div class="form-group">
                     <label for="country" class="form-label">Country</label>
-                    <select id="country" name="country" class="form-select" required>
-                      <option value="" disabled selected>Select your country</option>
-                      <option value="United States">United States</option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="United Arab Emirates">United Arab Emirates</option>
-                      <option value="Germany">Germany</option>
-                      <option value="Netherlands">Netherlands</option>
-                      <option value="Saudi Arabia">Saudi Arabia</option>
-                      <option value="Singapore">Singapore</option>
-                      <option value="Australia">Australia</option>
-                      <option value="Canada">Canada</option>
-                      <option value="France">France</option>
-                      <option value="Japan">Japan</option>
-                      <option value="India">India</option>
-                      <option value="Afghanistan">Afghanistan</option>
-                      <option value="Albania">Albania</option>
-                      <option value="Algeria">Algeria</option>
-                      <option value="Argentina">Argentina</option>
-                      <option value="Austria">Austria</option>
-                      <option value="Bahrain">Bahrain</option>
-                      <option value="Bangladesh">Bangladesh</option>
-                      <option value="Belgium">Belgium</option>
-                      <option value="Brazil">Brazil</option>
-                      <option value="Chile">Chile</option>
-                      <option value="China">China</option>
-                      <option value="Colombia">Colombia</option>
-                      <option value="Czech Republic">Czech Republic</option>
-                      <option value="Denmark">Denmark</option>
-                      <option value="Egypt">Egypt</option>
-                      <option value="Finland">Finland</option>
-                      <option value="Greece">Greece</option>
-                      <option value="Hong Kong">Hong Kong</option>
-                      <option value="Hungary">Hungary</option>
-                      <option value="Indonesia">Indonesia</option>
-                      <option value="Ireland">Ireland</option>
-                      <option value="Israel">Israel</option>
-                      <option value="Italy">Italy</option>
-                      <option value="Jordan">Jordan</option>
-                      <option value="Kenya">Kenya</option>
-                      <option value="Kuwait">Kuwait</option>
-                      <option value="Malaysia">Malaysia</option>
-                      <option value="Mexico">Mexico</option>
-                      <option value="Morocco">Morocco</option>
-                      <option value="New Zealand">New Zealand</option>
-                      <option value="Norway">Norway</option>
-                      <option value="Oman">Oman</option>
-                      <option value="Pakistan">Pakistan</option>
-                      <option value="Philippines">Philippines</option>
-                      <option value="Poland">Poland</option>
-                      <option value="Portugal">Portugal</option>
-                      <option value="Qatar">Qatar</option>
-                      <option value="Romania">Romania</option>
-                      <option value="South Africa">South Africa</option>
-                      <option value="South Korea">South Korea</option>
-                      <option value="Spain">Spain</option>
-                      <option value="Sri Lanka">Sri Lanka</option>
-                      <option value="Sweden">Sweden</option>
-                      <option value="Switzerland">Switzerland</option>
-                      <option value="Taiwan">Taiwan</option>
-                      <option value="Thailand">Thailand</option>
-                      <option value="Turkey">Turkey</option>
-                      <option value="Vietnam">Vietnam</option>
-                      <option value="Other">Other Country</option>
-                    </select>
+                    <input type="text" id="country" name="country" class="form-input" placeholder="e.g. United States, Germany, UAE" required>
                   </div>
                   <div class="form-group">
                     <label for="destination_port" class="form-label">Destination port</label>
-                    <input list="ports-list" id="destination_port" name="destination_port" class="form-input" placeholder="Start typing — e.g. Rotterdam, Jebel Ali">
-                    <datalist id="ports-list">
-                      <option value="Rotterdam (Netherlands)">
-                      <option value="Jebel Ali, Dubai (UAE)">
-                      <option value="Hamburg (Germany)">
-                      <option value="New York / New Jersey (USA)">
-                      <option value="Singapore">
-                      <option value="London Gateway / Felixstowe (UK)">
-                      <option value="Antwerp (Belgium)">
-                      <option value="Le Havre (France)">
-                      <option value="Los Angeles / Long Beach (USA)">
-                      <option value="Port Klang (Malaysia)">
-                      <option value="Dammam (Saudi Arabia)">
-                      <option value="Jeddah Islamic Port (Saudi Arabia)">
-                      <option value="Yokohama / Tokyo (Japan)">
-                      <option value="Sydney / Melbourne (Australia)">
-                      <option value="Colombo (Sri Lanka)">
-                      <option value="Nhava Sheva, Mumbai (India)">
-                      <option value="Cochin Port (India)">
-                      <option value="Alexandria (Egypt)">
-                      <option value="Santos (Brazil)">
-                      <option value="Busan (South Korea)">
-                    </datalist>
+                    <input type="text" id="destination_port" name="destination_port" class="form-input" placeholder="e.g. Rotterdam, Jebel Ali, New York">
                   </div>
                 </div>
 
                 <!-- I am a... Profile -->
                 <div class="form-group">
                   <label for="role" class="form-label">I am a…</label>
-                  <select id="role" name="role" class="form-select" required>
-                    <option value="" disabled selected>Select one</option>
-                    <option value="Importer / Distributor">Importer / Distributor</option>
-                    <option value="Food manufacturer">Food manufacturer</option>
-                    <option value="Spice blender or grinder">Spice blender or grinder</option>
-                    <option value="Specialty retailer">Specialty retailer</option>
-                    <option value="Foodservice or HORECA">Foodservice or HORECA</option>
-                    <option value="Extract or oleoresin processor">Extract or oleoresin processor</option>
-                    <option value="Other">Other</option>
-                  </select>
+                  <input type="text" id="role" name="role" class="form-input" placeholder="e.g. Importer, Distributor, Food manufacturer, Retailer" required>
                 </div>
 
                 <!-- Products of interest (Multi-select) -->
@@ -543,25 +495,11 @@
                 <div class="form-row-2">
                   <div class="form-group">
                     <label for="quantity" class="form-label">Approximate quantity</label>
-                    <select id="quantity" name="quantity" class="form-select">
-                      <option value="" disabled selected>Select a range</option>
-                      <option value="Sample only">Sample only</option>
-                      <option value="Under 500 kg">Under 500 kg</option>
-                      <option value="500 kg – 1 MT">500 kg – 1 MT</option>
-                      <option value="1 – 5 MT">1 – 5 MT</option>
-                      <option value="5 – 20 MT">5 – 20 MT</option>
-                      <option value="Full container">Full container</option>
-                      <option value="Not sure yet">Not sure yet</option>
-                    </select>
+                    <input type="text" id="quantity" name="quantity" class="form-input" placeholder="e.g. 500 kg, 2 MT, Full container, Sample">
                   </div>
                   <div class="form-group">
                     <label for="enquiry_type" class="form-label">Enquiry type</label>
-                    <select id="enquiry_type" name="enquiry_type" class="form-select">
-                      <option value="" disabled selected>Select one</option>
-                      <option value="Sample request">Sample request</option>
-                      <option value="Quotation">Quotation</option>
-                      <option value="General enquiry">General enquiry</option>
-                    </select>
+                    <input type="text" id="enquiry_type" name="enquiry_type" class="form-input" placeholder="e.g. Sample request, Quotation, General enquiry">
                   </div>
                 </div>
 

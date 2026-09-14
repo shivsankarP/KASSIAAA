@@ -89,8 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .light-section h1, .light-section h2, .light-section h3, .light-section h4, .light-section .eyebrow,
 .white-bg h1, .white-bg h2, .white-bg h3, .white-bg h4, .white-bg .eyebrow,
 [data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3, [data-theme="light"] h4, [data-theme="light"] .eyebrow,
-.light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg .eyebrow,
-.contact-form-card h1, .contact-form-card h2, .contact-form-card h3, .contact-form-card h4 {
+.light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg .eyebrow {
   color: #064734;
 }
 
@@ -2677,9 +2676,7 @@ h1, h2, h3, h4, h5, h6 {
 .light-section h1, .light-section h2, .light-section h3, .light-section h4, .light-section .eyebrow,
 .white-bg h1, .white-bg h2, .white-bg h3, .white-bg h4, .white-bg .eyebrow,
 [data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3, [data-theme="light"] h4, [data-theme="light"] .eyebrow,
-.light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg .eyebrow,
-.contact-form-card h1, .contact-form-card h2, .contact-form-card h3, .contact-form-card h4,
-.contact-form-card label {
+.light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg .eyebrow {
   color: #064734 !important;
 }
 
@@ -2699,8 +2696,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-white .heading-first-half,
 .bg-light .heading-first-half,
 .light-section .heading-first-half,
-.white-bg .heading-first-half,
-.contact-form-card .heading-first-half {
+.white-bg .heading-first-half {
   color: #064734 !important;
   -webkit-text-fill-color: #064734 !important;
 }
@@ -2709,8 +2705,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-white .heading-second-half,
 .bg-light .heading-second-half,
 .light-section .heading-second-half,
-.white-bg .heading-second-half,
-.contact-form-card .heading-second-half {
+.white-bg .heading-second-half {
   color: #1a1a1a !important;
   -webkit-text-fill-color: #1a1a1a !important;
 }
@@ -2786,6 +2781,29 @@ h1, h2, h3, h4, h5, h6 {
 .contact-info-item p,
 .contact-info-item a {
   color: #ffffff !important;
+}
+
+/* Company Card Labels & Values */
+.company-card-label {
+  font-family: 'Anton', Impact, sans-serif !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: var(--accent-cardamom) !important;
+}
+
+.company-card-val {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 1.05rem !important;
+  color: #ffffff !important;
+  line-height: 1.6 !important;
+}
+
+.cin-val,
+.company-card-val.cin-val {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  letter-spacing: 0.04em !important;
+  font-weight: 500 !important;
 }
 
 /* 8. Carousel & Card Headers */
